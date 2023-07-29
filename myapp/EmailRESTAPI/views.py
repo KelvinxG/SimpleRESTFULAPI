@@ -40,8 +40,4 @@ class EmailView(APIView):
             serializer.save()
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
-
-
-    def get_authenticate_header(self, request):
-        return super().get_authenticate_header(request)
     
