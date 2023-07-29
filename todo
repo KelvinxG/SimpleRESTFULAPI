@@ -1,0 +1,16 @@
+**EMAIL RESTFUL API in restframework 
+
+
+*BASIC CRUDS 
+
+-   get, get by id , email []
+-   post, post a new []
+-   update new infor like email []
+-   delete[]
+
+* Authentication system []
+* attachfile[]
+* emailnotification when email is delivered[]
+* throttling and rate limit 
+* Scheduling sending a email
+* Send to multiple recipients at once

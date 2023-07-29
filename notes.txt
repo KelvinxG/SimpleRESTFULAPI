@@ -1,0 +1,19 @@
+function | purpose  
+
+get_object_or_404 | to get an object if not it will return not found, only use when you want to get check if an object is found or not, it can return with a message
+
+
+Sure, I can provide a comparison in tabular form of the differences between `APIView`, `Generics`, and functional views in Django Rest Framework (DRF):
+
+| Feature           | APIView                                     | Generics                                   | Functional Views                      |
+|-------------------|---------------------------------------------|--------------------------------------------|---------------------------------------|
+| Base class        | Extends Django's `View` class              | Uses DRF's `APIView` as a base class       | N/A (No specific base class)          |
+| CRUD operations   | Need to be explicitly implemented          | Pre-implemented for common use cases      | Need to be explicitly implemented     |
+| Reusability       | Less reusable due to explicit coding       | More reusable due to pre-implemented code | Moderately reusable                  |
+| Flexibility       | Highly flexible, total control over logic   | Moderately flexible                      | Moderately flexible                   |
+| Code verbosity    | More code required to implement each view  | Less code required for common views       | Moderate code length                  |
+| Abstraction level | Low-level, requires handling request, response, serialization, etc. | Mid-level, abstracts common functionality | Mid-level, with direct control over everything |
+| Serialization     | Handled manually (e.g., using serializers) | Automated for common use cases            | Handled manually (if needed)          |
+| Code examples     | Involves more boilerplate code             | Involves less boilerplate code            | Involves moderate boilerplate code     |
+
+Please note that the choice between these views depends on your specific requirements. If you need more control over the views and don't mind writing more code, `APIView` might be the way to go. If you want a more streamlined approach and prefer less coding, `Generics` can be helpful. Functional views provide an alternative way to implement views but don't have a specific base class in DRF.
